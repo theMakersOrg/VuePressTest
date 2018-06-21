@@ -1,5 +1,6 @@
 ---
 home: true
+heroImage: /banner.svg
 actionText: See Counter App
 actionLink: /counter/counter-app
 features:
