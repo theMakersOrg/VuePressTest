@@ -5,9 +5,11 @@
       <img v-if="data.heroImage" :src="$withBase(data.heroImage)" alt="hero">
     </div>
 
+    <h1>{{ data.featuresName }}</h1>
+
     <div class="features" v-if="data.features && data.features.length">
+      
       <div class="feature" v-for="feature in data.features">
-        
         <h2>{{ feature.title }}</h2>
         <img v-if="feature.image" :src="$withBase(feature.image)" alt="hero">
         <p>{{ feature.details }}</p>
@@ -26,6 +28,18 @@
     </div>
 
     <Content custom/>
+
+    <h1>{{ data.sponsorsName }}</h1>
+
+    <div class="sponsors" v-if="data.sponsors && data.sponsors.length">
+      
+      <div class="sponsor" v-for="sponsor in data.sponsors">
+        <h2>{{ sponsor.title }}</h2>
+        <img v-if="sponsor.image" :src="$withBase(sponsor.image)" alt="hero">
+        <p>{{ sponsor.details }}</p>
+        
+      </div>
+    </div>
 
     <div class="footer" v-if="data.footer">
       {{ data.footer }}
@@ -61,13 +75,19 @@ export default {
   max-width: 960px;
   margin: 0px auto;
 
+  h1 {
+    font-size: 3rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+
   .hero {
     text-align: center;
 
     img {
       align-items: center;
       // max-height 280px
-      max-width:100%;
+      max-width: 100%;
       display: block;
       margin: 0rem auto;
     }
@@ -117,9 +137,27 @@ export default {
 
     img {
       align-items: center;
-      max-width:100%;
+      max-width: 100%;
       display: block;
       margin: 0rem auto;
+    }
+  }
+
+  .feature {
+    flex-grow: 1;
+    flex-basis: 30%;
+    max-width: 30%;
+
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 500;
+      border-bottom: none;
+      padding-bottom: 0;
+      color: lighten($textColor, 10%);
+    }
+
+    p {
+      color: lighten($textColor, 25%);
     }
   }
 
@@ -168,7 +206,25 @@ export default {
     }
   }
 
-  .feature {
+    .sponsors {
+    border-top: 1px solid $borderColor;
+    padding: 1.2rem 0;
+    margin-top: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: stretch;
+    justify-content: space-between;
+
+    img {
+      align-items: center;
+      max-width: 100%;
+      display: block;
+      margin: 0rem auto;
+    }
+  }
+
+  .sponsor {
     flex-grow: 1;
     flex-basis: 30%;
     max-width: 30%;
