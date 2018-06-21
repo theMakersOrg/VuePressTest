@@ -5,7 +5,7 @@
       <img v-if="data.heroImage" :src="$withBase(data.heroImage)" alt="hero">
     </div>
 
-    <h1>{{ data.featuresName }}</h1>
+    <h1 id = "what" >{{ data.featuresName }}</h1>
 
     <div class="features" v-if="data.features && data.features.length">
       
@@ -13,8 +13,8 @@
         <h2>{{ feature.title }}</h2>
         <img v-if="feature.image" :src="$withBase(feature.image)" alt="hero">
         <p>{{ feature.details }}</p>
-        
       </div>
+
     </div>
 
     <div class="subhero">
@@ -34,9 +34,11 @@
     <div class="sponsors" v-if="data.sponsors && data.sponsors.length">
       
       <div class="sponsor" v-for="sponsor in data.sponsors">
-        <h2>{{ sponsor.title }}</h2>
-        <img v-if="sponsor.image" :src="$withBase(sponsor.image)" alt="hero">
-        <p>{{ sponsor.details }}</p>
+        <a href= {{sponsor.link}} > 
+          <h2>{{ sponsor.title }}</h2>
+          <img v-if="sponsor.image" :src="$withBase(sponsor.image)" alt="hero">
+          <p>{{ sponsor.details }}</p>
+        </a>
         
       </div>
     </div>

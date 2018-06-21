@@ -3,12 +3,13 @@ module.exports = {
     description: 'Smart community Shared resources',
     themeConfig:{
         nav: [
-            { text: 'COUNTER', link: '/counter/' },
-            { text: 'GUIDE', link: '/guide/' },
+            { text: 'WHERE', link: '/#where' },
+            { text: 'WHAT', link: '/#what' },
+            { text: 'WHEN', link: '/#open-night' },
         ],
         sidebar: [
             {
-                title: 'Counter',
+                title: 'where',
                 collapsable: false,
                 children: [
                 '/counter/counter-app'
