@@ -7,8 +7,9 @@
 
     <div class="features" v-if="data.features && data.features.length">
       <div class="feature" v-for="feature in data.features">
-        <img v-if="feature.image" :src="$withBase(feature.image)" alt="hero">
+        
         <h2>{{ feature.title }}</h2>
+        <img v-if="feature.image" :src="$withBase(feature.image)" alt="hero">
         <p>{{ feature.details }}</p>
         
       </div>
@@ -64,7 +65,9 @@ export default {
     text-align: center;
 
     img {
+      align-items: center;
       // max-height 280px
+      max-width:100%;
       display: block;
       margin: 0rem auto;
     }
@@ -111,6 +114,13 @@ export default {
     align-items: flex-start;
     align-content: stretch;
     justify-content: space-between;
+
+    img {
+      align-items: center;
+      max-width:100%;
+      display: block;
+      margin: 0rem auto;
+    }
   }
 
   .subhero {

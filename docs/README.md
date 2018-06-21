@@ -4,13 +4,15 @@ heroImage: /banner.svg
 actionText: See Counter App
 actionLink: /counter/counter-app
 features:
-- title: Embedded Vue Counter
-  image: /banner.svg
-  details: A Vue counter developed using Vue is embedded in this doc, now that's the power of VuePress!
-- title: Fun Docs made with VuePress
-  details: This entire doc was basically made with VuePress which parsed markdown files and corresponding assets using webpack.
-- title: Fun Docs made with VuePress
-  details: This entire doc was basically made with VuePress which parsed markdown files and corresponding assets using webpack.
+- title: 3D Printing
+  image: /3dPrinting.jpg
+  details: We have a variety of printers and people with lots of experience 3D printing.
+- title: Sewing
+  image: /sewing.jpg
+  details: Feeling the need to create? Our industrial Sewing machines and overlockers are waiting to connect your cool threads.
+- title: Raspberry Pi
+  image: /Rpi.jpg
+  details: Get started with linux using a Raspberry Pi. From home theatre to home automation and voice control like in the movies, do it all in one of our customised Rpi workspaces.
 
 footer: Developed using VuePress by Kurt@Kurtsch.com.au
 ---
