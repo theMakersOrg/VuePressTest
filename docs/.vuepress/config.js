@@ -6,23 +6,8 @@ module.exports = {
             { text: 'WHERE', link: '/#where' },
             { text: 'WHAT', link: '/#what' },
             { text: 'WHEN', link: '/#open-night' },
+            { text: 'Subscribe', link: '/#subscriber-benefits' },
+            { text: 'Membership', link: '/#become-a-member' },
         ],
-        sidebar: [
-            {
-                title: 'where',
-                collapsable: false,
-                children: [
-                '/counter/counter-app'
-                ]
-            },
-            {
-                title: 'API Guide',
-                collapsable: false,
-                children: [
-                    '/guide/guide',
-                    '/guide/api'
-                ]
-            }
-            ]
     }
   }

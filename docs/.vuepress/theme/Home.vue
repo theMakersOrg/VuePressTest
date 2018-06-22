@@ -34,11 +34,11 @@
     <div class="sponsors" v-if="data.sponsors && data.sponsors.length">
       
       <div class="sponsor" v-for="sponsor in data.sponsors">
-        <router-link  to=sponsor.link>
+        <a :href ="sponsor.link" target="_blank">
           <h2>{{ sponsor.title }}</h2>
           <img v-if="sponsor.image" :src="$withBase(sponsor.image)" alt="sponsor image">
           <p>{{ sponsor.details }}</p>
-        </router-link>
+        </a>
         
       </div>
     </div>
