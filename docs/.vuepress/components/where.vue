@@ -6,12 +6,13 @@
   <div>
     <p>
       <ul>
-        <li><p>email: create@themakers.org</p></li>
+        <li><p>email: <a href="create@themakers.org">create@themakers.org</a> </p></li>
         <li><p>Address: Y-Block, Tafe Cairns, QLD, 4870.</p></li>
         <li><p>email: create@themakers.org</p></li>
-          
+
       </ul>
     </p>
+    <img src="/map.png" alt="Located at TAFE Cairns in Y-Block">
   </div>
 </div>
 </template>
